@@ -26,6 +26,8 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = '64234238jkdsmnkamdad'  # Replace this with a secure key
 db = SQLAlchemy(app)
 
+migrate = Migrate(app,db)
+
 class Teacher(db.Model):
     teacher_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
