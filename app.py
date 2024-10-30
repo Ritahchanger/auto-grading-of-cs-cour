@@ -6,6 +6,8 @@ import math
 import random
 import os
 
+from flask_migrate import Migrate
+
 from werkzeug.security import check_password_hash, generate_password_hash
 import secrets
 import smtplib
@@ -19,9 +21,9 @@ from create_template import create_template
 SECRET_KEY = secrets.token_urlsafe(16)
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://lplssjusbwlymo:31bd54bec9a37daf6cc9f0e03c30bb2cffb45fa3645565a0efab3ffbd4586615@ec2-52-7-30-112.compute-1.amazonaws.com:5432/d6nvpv17et6qni"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:@localhost:3306/spring_crude"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.secret_key = SECRET_KEY
+app.secret_key = '64234238jkdsmnkamdad'  # Replace this with a secure key
 db = SQLAlchemy(app)
 
 class Teacher(db.Model):

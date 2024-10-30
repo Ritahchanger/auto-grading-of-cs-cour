@@ -11,8 +11,10 @@ scikit-learn = "*"
 pandas = "*"
 gunicorn = "*"
 psycopg2 = "*"
+mysql-connector-python = "*"
+pymysql = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.9"
+python_version = "3.10"
