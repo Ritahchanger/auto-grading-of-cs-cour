@@ -1,3 +1,7 @@
+
+This project has been forked from [https://github.com/SE-19/autograding-of-cs-courses](https://github.com/SE-19/autograding-of-cs-courses) for educational and collaborative purposes. The fork allows for further development, experimentation, and improvements while retaining the core functionalities of the original project.
+
+
 # autograding-of-cs-courses
 
 5th Semester project for SE subject offered by UET, Lahore.
